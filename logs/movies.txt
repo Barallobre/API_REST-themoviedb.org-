@@ -22,3 +22,72 @@
 2023-06-28 17:25:33.493 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 3910.3811ms
 2023-06-28 17:25:33.498 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
 2023-06-28 17:25:33.498 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 3945.9787ms
+2023-06-28 17:38:25.504 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-28 17:38:25.510 +02:00 [INF] Hosting environment: Development
+2023-06-28 17:38:25.511 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-28 17:38:25.517 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-28 17:38:25.815 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 300.5163ms
+2023-06-28 17:38:25.833 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-28 17:38:25.833 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger-ui.css - -
+2023-06-28 17:38:25.833 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-28 17:38:25.845 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 11.2594ms
+2023-06-28 17:38:25.850 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-06-28 17:38:25.850 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger-ui.css - - - 0 144929 text/css 16.6613ms
+2023-06-28 17:38:25.863 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.3579ms
+2023-06-28 17:38:25.880 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/favicon-16x16.png - -
+2023-06-28 17:38:25.881 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2023-06-28 17:38:25.881 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/favicon-16x16.png - - - 0 665 image/png 1.0539ms
+2023-06-28 17:38:25.927 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-28 17:38:26.000 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.6090ms
+2023-06-28 17:38:32.314 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-06-28 17:38:32.321 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-28 17:38:32.339 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-28 17:38:34.439 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-06-28 17:38:34.448 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 2105.3508ms
+2023-06-28 17:38:34.449 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-28 17:38:34.449 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 2135.7200ms
+2023-06-28 17:40:15.097 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-28 17:40:15.104 +02:00 [INF] Hosting environment: Development
+2023-06-28 17:40:15.104 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-28 17:40:15.111 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-28 17:40:15.422 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 314.6117ms
+2023-06-28 17:40:15.440 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-28 17:40:15.440 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-28 17:40:15.453 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 10.8049ms
+2023-06-28 17:40:15.475 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.7766ms
+2023-06-28 17:40:15.486 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/favicon-16x16.png - -
+2023-06-28 17:40:15.495 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2023-06-28 17:40:15.495 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/favicon-16x16.png - - - 0 665 image/png 9.3290ms
+2023-06-28 17:40:15.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-28 17:40:15.657 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.2635ms
+2023-06-28 17:41:04.554 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-06-28 17:41:04.559 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-28 17:41:04.577 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-28 17:41:06.158 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?api_key=b4d2f63b3df96f35f5964211f81772c6&query=harry+potter
+2023-06-28 17:41:06.303 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-28 17:41:06.353 +02:00 [INF] MovieModel: Movies.Models.MovieModel
+2023-06-28 17:41:06.356 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-06-28 17:41:06.366 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1785.0204ms
+2023-06-28 17:41:06.368 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-28 17:41:06.368 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 1814.0986ms
+2023-06-28 17:41:58.030 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-28 17:41:58.036 +02:00 [INF] Hosting environment: Development
+2023-06-28 17:41:58.037 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-28 17:41:58.043 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-28 17:41:58.345 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 305.4717ms
+2023-06-28 17:41:58.370 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-28 17:41:58.370 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-28 17:41:58.383 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 7.1547ms
+2023-06-28 17:41:58.405 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.4084ms
+2023-06-28 17:41:58.466 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-28 17:41:58.539 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 73.0471ms
+2023-06-28 17:42:05.998 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-06-28 17:42:06.004 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-28 17:42:06.022 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-28 17:42:07.559 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?api_key=b4d2f63b3df96f35f5964211f81772c6&query=harry+potter
+2023-06-28 17:42:07.697 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-28 17:42:07.739 +02:00 [INF] MovieModel: {"Titulo":"Harry Potter and the Philosopher\u0027s Stone","Titulo_original":"Harry Potter and the Philosopher\u0027s Stone","Nota_media":7.916,"Fecha_estreno":"2001-11-16T00:00:00","Descripcion":"Harry Potter has lived under the stairs at his aunt and uncle\u0027s house his whole life. But on his 11th birthday, he learns he\u0027s a powerful wizard\u2014with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school\u0027s kindly headmaster, Harry uncovers the truth about his parents\u0027 deaths\u2014and about the villain who\u0027s to blame.","Peliculas_similares":[{"Titulo":"Harry Potter and the Half-Blood Prince","Fecha_estreno":2009},{"Titulo":"Harry Potter and the Goblet of Fire","Fecha_estreno":2005},{"Titulo":"Harry Potter and the Chamber of Secrets","Fecha_estreno":2002},{"Titulo":"Harry Potter and the Prisoner of Azkaban","Fecha_estreno":2004},{"Titulo":"Harry Potter and the Deathly Hallows: Part 2","Fecha_estreno":2011}],"Peliculas_misma_tematica":"Harry Potter and the Half-Blood Prince (2009), Harry Potter and the Goblet of Fire (2005), Harry Potter and the Chamber of Secrets (2002), Harry Potter and the Prisoner of Azkaban (2004), Harry Potter and the Deathly Hallows: Part 2 (2011)"}
+2023-06-28 17:42:07.749 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-06-28 17:42:07.757 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1732.0657ms
+2023-06-28 17:42:07.759 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-28 17:42:07.760 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 1761.0215ms

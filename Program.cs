@@ -3,7 +3,6 @@ using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.UseSerilog((ctx, lc) => lc
-    .WriteTo.Console()
     .WriteTo.File("logs/movies.txt"));
 
 builder.Services.AddControllers();

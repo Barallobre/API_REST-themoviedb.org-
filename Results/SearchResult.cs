@@ -1,5 +1,6 @@
 ﻿using Movies.Entities;
 using Movies.Models;
+using Serilog;
 using System.Text.Json;
 
 namespace Movies.Results
@@ -16,13 +17,13 @@ namespace Movies.Results
                 var movies = JsonSerializer.Deserialize<MoviesList>(moviesResult);
 
                 MovieModel movieModel = mapMovieSearch(movies.results);
-           
+                
                 return movieModel;
             }
             catch (Exception ex) 
             {
-                Console.WriteLine(ex);
-                //TODO implementar excepción
+                Log.Information($"ERROR -> Excepction: {ex}");
+                //TODO implementar excepción controlada
             };
             return null;
         }
