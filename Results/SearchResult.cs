@@ -18,8 +18,6 @@ namespace Movies.Results
                 MovieModel movieModel = mapMovieSearch(movies.results);
            
                 return movieModel;
-
-                //TOTO serilog
             }
             catch (Exception ex) 
             {
