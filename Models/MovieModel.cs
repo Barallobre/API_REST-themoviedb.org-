@@ -1,18 +1,21 @@
-﻿
-namespace Movies.Models
+﻿namespace Movies.Models;
+
+public class MovieModel
 {
-    public class MovieModel
+    public string? Titulo { get; set; }
+  
+    public string? Titulo_original { get; set; }
+
+    public decimal Nota_media { get; set; }
+   
+    public DateTime Fecha_estreno { get; set; }
+   
+    public string? Descripcion { get; set; }
+
+    public List<SimilarMovieModel> Peliculas_similares { get; set; }
+
+    public MovieModel()
     {
-        public string? title { get; set; }
-      
-        public string? original_title { get; set; }
-
-        public decimal vote_average { get; set; }
-       
-        public DateTime release_date { get; set; }
-       
-        public string? overview { get; set; }
-
-        public SimilarMovieModel SimilarMovieModel { get; set; }
+        Peliculas_similares = new List<SimilarMovieModel>();
     }
 }

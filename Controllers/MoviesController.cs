@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Movies.Entities;
 using Movies.Models;
 using Movies.Results;
 using System.Net.Http.Headers;

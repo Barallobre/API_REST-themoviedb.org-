@@ -2,7 +2,7 @@
 {
     public class SimilarMovieModel
     {
-        public string Title { get; set; }
-        public DateTime ReleaseDate { get; set; }
+        public string? Titulo { get; set; }
+        public int Fecha_estreno { get; set; }
     }
 }
