@@ -8,7 +8,7 @@ namespace Movies.Results
     {
         public static MovieModel Result(HttpResponseMessage result)
         {
-
+          
             var moviesResult = result.Content.ReadAsStringAsync().Result;
 
             try
@@ -16,7 +16,7 @@ namespace Movies.Results
                 var movies = JsonSerializer.Deserialize<MoviesList>(moviesResult);
 
                 MovieModel movieModel = mapMovieSearch(movies.results);
-
+           
                 return movieModel;
 
                 //TOTO serilog
@@ -33,7 +33,7 @@ namespace Movies.Results
         {
 
             List<SimilarMovieModel> similarMovieModelList = new List<SimilarMovieModel>();
-
+            List<string> peliculas = new List<string>();    
             if (movies != null)
             {
                 for(int i = 1; i<=5; i++) 
@@ -42,9 +42,11 @@ namespace Movies.Results
                     similarMovieModel.Titulo = movies[i].title;
                     similarMovieModel.Fecha_estreno = movies[i].release_date.Year;
                     similarMovieModelList.Add(similarMovieModel);
+                    string pelicula = String.Format($"{movies[i].title} ({movies[i].release_date.Year})");
+                    peliculas.Add( pelicula );
                 }
             }
-
+            string concat = string.Join(", ", peliculas);
             MovieModel movieModel = new MovieModel()
             {
                 Titulo = movies[0].title,
@@ -52,12 +54,9 @@ namespace Movies.Results
                 Nota_media = movies[0].vote_average,
                 Fecha_estreno = movies[0].release_date,
                 Descripcion = movies[0].overview,
-                Peliculas_similares = similarMovieModelList
+                Peliculas_similares = similarMovieModelList,
+                Peliculas_misma_tematica = concat
             };
-
-
-
-
             return movieModel;
         }
     }

@@ -1,0 +1,24 @@
+2023-06-28 17:25:18.839 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-28 17:25:18.851 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-28 17:25:18.853 +02:00 [INF] Hosting environment: Development
+2023-06-28 17:25:18.854 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-28 17:25:19.141 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 292.9037ms
+2023-06-28 17:25:19.155 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger-ui.css - -
+2023-06-28 17:25:19.160 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-28 17:25:19.163 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-28 17:25:19.175 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 9.3377ms
+2023-06-28 17:25:19.176 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-06-28 17:25:19.176 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger-ui.css - - - 0 144929 text/css 21.1523ms
+2023-06-28 17:25:19.194 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.2352ms
+2023-06-28 17:25:19.203 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/favicon-16x16.png - -
+2023-06-28 17:25:19.204 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2023-06-28 17:25:19.204 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/favicon-16x16.png - - - 0 665 image/png 1.0430ms
+2023-06-28 17:25:19.252 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-28 17:25:19.326 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 73.8342ms
+2023-06-28 17:25:29.552 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-06-28 17:25:29.559 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-28 17:25:29.578 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-28 17:25:33.479 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-06-28 17:25:33.493 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 3910.3811ms
+2023-06-28 17:25:33.498 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-28 17:25:33.498 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 3945.9787ms

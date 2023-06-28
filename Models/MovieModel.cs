@@ -14,6 +14,8 @@ public class MovieModel
 
     public List<SimilarMovieModel> Peliculas_similares { get; set; }
 
+    public string Peliculas_misma_tematica { get; set; }
+
     public MovieModel()
     {
         Peliculas_similares = new List<SimilarMovieModel>();
