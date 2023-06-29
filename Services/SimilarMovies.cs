@@ -1,29 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Movies.Models;
-using Movies.Results;
-using Serilog;
+﻿using Serilog;
 using System.Net.Http.Headers;
-using System.Text.Json;
 using System.Web;
 
-namespace Movies.Controllers
+namespace Movies.Services
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class MoviesController : ControllerBase
+    public class SimilarMovies
     {
-        [HttpGet("{name}")]
-        [Produces("application/json")]
-        public MovieModel Get(string name)
+        
+        string api_key = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiNGQyZjYzYjNkZjk2ZjM1ZjU5NjQyMTFmODE3NzJjNiIsInN1YiI6IjY0OTliYTE3YjM0NDA5MDBjNTUwMzRjOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.UB0sOyYmelsU6_Rnn7QwiUbuCmUtq6BEiZmv8dBwMoc";
+
+        public static string GetSimilarMovies(int id)
         {
             HttpResponseMessage result = null;
             using (var client = new HttpClient())
             {
-                var uriBuilder = new UriBuilder("https://api.themoviedb.org/3/search/movie");
+                var uriBuilder = new UriBuilder($"https://api.themoviedb.org/3/movie/{id}/similar");
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiNGQyZjYzYjNkZjk2ZjM1ZjU5NjQyMTFmODE3NzJjNiIsInN1YiI6IjY0OTliYTE3YjM0NDA5MDBjNTUwMzRjOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.UB0sOyYmelsU6_Rnn7QwiUbuCmUtq6BEiZmv8dBwMoc");
                 var parameters = HttpUtility.ParseQueryString(string.Empty);
-                parameters["query"] = name;
                 parameters["language"] = "es-ES";
                 uriBuilder.Query = parameters.ToString();
                 Uri finalUrl = uriBuilder.Uri;
@@ -34,17 +28,16 @@ namespace Movies.Controllers
                     result = client.GetAsync(finalUrl).Result;
                     Log.Information($"END Request -> StatusCode: {result.StatusCode}");
                 }
-                catch (Exception ex) 
+                catch (Exception ex)
                 {
                     Log.Information($"ERROR -> Excepction: {ex}");
                 }
-                
+
             }
-            var content = SearchResult.Result(result);
-            string jsonString = JsonSerializer.Serialize(content);
-            Log.Information($"MovieModel: {jsonString}");
-            
-            return content;
+            string resultMovies = result.Content.ReadAsStringAsync().Result;
+            Log.Information($"MovieModel: {result}");
+
+            return resultMovies;
         }
     }
 }
