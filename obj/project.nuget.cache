@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "tezqsFLebeNB6s/trGtWJDj08wmWVVqIL/NsNDlvIO/TIITSQl3d59Qxz9xjR+URkgr1ddGZVH+GBjrwhMc3kg==",
+  "dgSpecHash": "HNg2hUwDN03UTpU8z9KQZ+B141eOCY0RgD0HsBy73C8pMkV9hA51bC4FXGA8Vq07jfz4ACMeTbSO+cxXe7efUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cristian\\source\\repos\\Movies\\Movies.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.0\\microsoft.extensions.configuration.binder.7.0.0.nupkg.sha512",
     "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",

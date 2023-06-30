@@ -12,16 +12,26 @@ namespace Movies.Controllers
     [ApiController]
     public class MoviesController : ControllerBase
     {
+
+        private readonly IConfiguration _configuration;
+
+        public MoviesController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
+
         [HttpGet("{name}")]
         [Produces("application/json")]
         public MovieModel Get(string name)
         {
+            var token = _configuration.GetSection("Settings")["token"];
             HttpResponseMessage result = null;
             using (var client = new HttpClient())
             {
                 var uriBuilder = new UriBuilder("https://api.themoviedb.org/3/search/movie");
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiNGQyZjYzYjNkZjk2ZjM1ZjU5NjQyMTFmODE3NzJjNiIsInN1YiI6IjY0OTliYTE3YjM0NDA5MDBjNTUwMzRjOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.UB0sOyYmelsU6_Rnn7QwiUbuCmUtq6BEiZmv8dBwMoc");
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
                 var parameters = HttpUtility.ParseQueryString(string.Empty);
                 parameters["query"] = name;
                 parameters["language"] = "es-ES";

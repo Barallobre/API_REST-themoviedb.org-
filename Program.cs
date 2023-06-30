@@ -8,9 +8,9 @@ builder.Host.UseSerilog((ctx, lc) => lc
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 // Add services to the container.
 
+var configuration = builder.Configuration;
 var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(options =>

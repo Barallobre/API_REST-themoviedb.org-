@@ -64,3 +64,4 @@ C:\Users\Cristian\source\repos\Movies\obj\Debug\net6.0\refint\Movies.dll
 C:\Users\Cristian\source\repos\Movies\obj\Debug\net6.0\Movies.pdb
 C:\Users\Cristian\source\repos\Movies\obj\Debug\net6.0\Movies.genruntimeconfig.cache
 C:\Users\Cristian\source\repos\Movies\obj\Debug\net6.0\ref\Movies.dll
+C:\Users\Cristian\source\repos\Movies\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
