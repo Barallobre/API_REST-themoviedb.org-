@@ -20,7 +20,6 @@ namespace Movies.Controllers
             _configuration = configuration;
         }
 
-
         [HttpGet("{name}")]
         [Produces("application/json")]
         public MovieModel Get(string name)
@@ -50,7 +49,9 @@ namespace Movies.Controllers
                 }
                 
             }
-            var content = SearchResult.Result(result);
+            SearchResult searchResult = new SearchResult(_configuration);
+            
+            var content = searchResult.Result(result);
             string jsonString = JsonSerializer.Serialize(content);
             Log.Information($"MovieModel: {jsonString}");
             

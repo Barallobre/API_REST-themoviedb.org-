@@ -2196,3 +2196,439 @@
 2023-06-30 20:07:12.201 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 2132.3074ms
 2023-06-30 20:07:12.203 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
 2023-06-30 20:07:12.203 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 2165.2927ms
+2023-06-30 20:26:02.746 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 20:26:02.752 +02:00 [INF] Hosting environment: Development
+2023-06-30 20:26:02.753 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-30 20:26:02.759 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 20:26:03.077 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 321.7703ms
+2023-06-30 20:26:03.093 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 20:26:03.093 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 20:26:03.102 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 8.7593ms
+2023-06-30 20:26:03.124 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.6136ms
+2023-06-30 20:26:03.192 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 20:26:03.267 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.9591ms
+2023-06-30 20:43:54.001 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 20:43:54.008 +02:00 [INF] Hosting environment: Development
+2023-06-30 20:43:54.009 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-30 20:43:54.015 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 20:43:54.329 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 317.4789ms
+2023-06-30 20:43:54.352 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 20:43:54.352 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 20:43:54.365 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 10.6911ms
+2023-06-30 20:43:54.387 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.4001ms
+2023-06-30 20:43:54.452 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 20:43:54.537 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.4826ms
+2023-06-30 20:44:01.128 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-06-30 20:44:01.134 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 20:44:01.153 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 20:45:38.027 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-06-30 20:45:38.167 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 20:45:38.193 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/671/similar?language=es-ES
+2023-06-30 20:45:38.262 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 20:45:38.263 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Fri, 30 Jun 2023 18:01:48 GMT
+  Server: openresty
+  Cache-Control: public, max-age=22910
+  X-Memc: HIT
+  X-Memc-Key: ecb3c24aa806a6ccade488d9233d7737
+  X-Memc-Age: 9925
+  X-Memc-Expires: 12117
+  ETag: W/"1407779d583b4630049419c44926f00f"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Hit from cloudfront
+  Via: 1.1 99428b194b789dc91708a62963bf6350.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: _m_Y049QL-b5zyU84w4s6Ub3dZNAlB65-dxzWK7Ww0pwigfbGnYdYQ==
+  Age: 2631
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 14060
+}
+2023-06-30 20:45:38.272 +02:00 [INF] MovieModel: {"Titulo":"Harry Potter y la piedra filosofal","Titulo_original":"Harry Potter and the Philosopher\u0027s Stone","Nota_media":7.916,"Fecha_estreno":"16-11-2001","Descripcion":"Harry Potter es un hu\u00E9rfano que vive con sus desagradables t\u00EDos, los Dursley, y su repelente primo Dudley. Se acerca su und\u00E9cimo cumplea\u00F1os y tiene pocas esperanzas de recibir alg\u00FAn regalo, ya que nunca nadie se acuerda de \u00E9l. Sin embargo, pocos d\u00EDas antes de su cumplea\u00F1os, una serie de misteriosas cartas dirigidas a \u00E9l y escritas con una estridente tinta verde rompen la monoton\u00EDa de su vida: Harry es un mago y sus padres tambi\u00E9n lo eran.","Peliculas_misma_tematica":"Piercing (2018), Pallikkoodam (2016), The Dellville Witch (2010), Fant\u00E1stico Sr. Fox (2009), Woyzeck (1979)"}
+2023-06-30 20:45:38.278 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-06-30 20:45:38.287 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 97130.664ms
+2023-06-30 20:45:38.289 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 20:45:38.289 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 97160.9867ms
+2023-06-30 20:58:17.172 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/!"·!"· - -
+2023-06-30 20:58:17.174 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 20:58:17.175 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 20:58:17.176 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=!"·!"·&language=es-ES
+2023-06-30 20:58:17.362 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 20:58:17.423 +02:00 [INF] ERROR -> Excepction: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Movies.Results.SearchResult.Result(HttpResponseMessage result) in C:\Users\Cristian\source\repos\Movies\Results\SearchResult.cs:line 27
+2023-06-30 20:58:17.423 +02:00 [INF] MovieModel: null
+2023-06-30 20:58:17.423 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-06-30 20:58:17.423 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 248.5208ms
+2023-06-30 20:58:17.423 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 20:58:17.424 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/!"·!"· - - - 204 0 - 252.0121ms
+2023-06-30 20:58:36.027 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 20:58:36.033 +02:00 [INF] Hosting environment: Development
+2023-06-30 20:58:36.034 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-30 20:58:36.040 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 20:58:36.362 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 325.3222ms
+2023-06-30 20:58:36.466 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 20:58:36.467 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 20:58:36.480 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 7.6944ms
+2023-06-30 20:58:36.499 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.8408ms
+2023-06-30 20:58:36.563 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 20:58:36.637 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.3627ms
+2023-06-30 20:59:05.346 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/·"$"·%"·$ - -
+2023-06-30 20:59:05.355 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 20:59:05.376 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 20:59:25.849 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=·"%24"·%25"·%24&language=es-ES
+2023-06-30 20:59:54.922 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 20:59:57.861 +02:00 [INF] ERROR -> Excepction: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Movies.Results.SearchResult.Result(HttpResponseMessage result) in C:\Users\Cristian\source\repos\Movies\Results\SearchResult.cs:line 27
+2023-06-30 21:00:15.487 +02:00 [INF] MovieModel: null
+2023-06-30 21:00:19.517 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-06-30 21:00:19.521 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 74141.7096ms
+2023-06-30 21:00:19.523 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:00:19.523 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/·"$"·%"·$ - - - 204 0 - 74176.8422ms
+2023-06-30 21:00:36.720 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-06-30 21:00:36.723 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:00:36.723 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:00:51.462 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-06-30 21:01:07.051 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:03:55.520 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 21:03:55.527 +02:00 [INF] Hosting environment: Development
+2023-06-30 21:03:55.528 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-30 21:03:55.533 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 21:03:55.839 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 309.2169ms
+2023-06-30 21:03:55.853 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 21:03:55.853 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 21:03:55.866 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 6.2038ms
+2023-06-30 21:03:55.888 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.1159ms
+2023-06-30 21:03:55.956 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 21:03:56.031 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.9625ms
+2023-06-30 21:04:06.356 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-06-30 21:04:06.364 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:04:06.386 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:04:09.183 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-06-30 21:04:09.361 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:04:41.136 +02:00 [INF] ERROR -> Excepction: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Movies.Results.SearchResult.MapMovieSearch(List`1 movies, List`1 moviesSimilar)
+   at Movies.Results.SearchResult.Result(HttpResponseMessage result)
+2023-06-30 21:04:41.137 +02:00 [INF] MovieModel: null
+2023-06-30 21:04:41.147 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-06-30 21:04:41.150 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 34760.7614ms
+2023-06-30 21:04:41.152 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:04:41.153 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/?''' - - - 204 0 - 34796.4551ms
+2023-06-30 21:04:42.146 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 21:04:42.158 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 11.9987ms
+2023-06-30 21:04:42.179 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 21:04:42.179 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 21:04:42.181 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 1.5012ms
+2023-06-30 21:04:42.205 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.6666ms
+2023-06-30 21:04:42.272 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 21:04:42.273 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.5830ms
+2023-06-30 21:04:51.974 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-06-30 21:04:51.975 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:04:51.976 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:04:54.207 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-06-30 21:04:54.262 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:05:06.080 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/671/similar?language=es-ES
+2023-06-30 21:05:06.124 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:05:06.125 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Fri, 30 Jun 2023 18:01:48 GMT
+  Server: openresty
+  Cache-Control: public, max-age=22910
+  X-Memc: HIT
+  X-Memc-Key: ecb3c24aa806a6ccade488d9233d7737
+  X-Memc-Age: 9925
+  X-Memc-Expires: 12117
+  ETag: W/"1407779d583b4630049419c44926f00f"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Hit from cloudfront
+  Via: 1.1 99428b194b789dc91708a62963bf6350.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: UJ15QYitfe8ZK1R6DlvoGzovwMmnGNx5YBd_8rTnFRwydILJfrWrQQ==
+  Age: 3799
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 14060
+}
+2023-06-30 21:05:06.134 +02:00 [INF] MovieModel: {"Titulo":"Harry Potter y la piedra filosofal","Titulo_original":"Harry Potter and the Philosopher\u0027s Stone","Nota_media":7.916,"Fecha_estreno":"16-11-2001","Descripcion":"Harry Potter es un hu\u00E9rfano que vive con sus desagradables t\u00EDos, los Dursley, y su repelente primo Dudley. Se acerca su und\u00E9cimo cumplea\u00F1os y tiene pocas esperanzas de recibir alg\u00FAn regalo, ya que nunca nadie se acuerda de \u00E9l. Sin embargo, pocos d\u00EDas antes de su cumplea\u00F1os, una serie de misteriosas cartas dirigidas a \u00E9l y escritas con una estridente tinta verde rompen la monoton\u00EDa de su vida: Harry es un mago y sus padres tambi\u00E9n lo eran.","Peliculas_misma_tematica":"Piercing (2018), Pallikkoodam (2016), The Dellville Witch (2010), Fant\u00E1stico Sr. Fox (2009), Woyzeck (1979)"}
+2023-06-30 21:05:06.135 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-06-30 21:05:06.140 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 14164.2423ms
+2023-06-30 21:05:06.140 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:05:06.140 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 14165.8795ms
+2023-06-30 21:05:13.895 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?```` - -
+2023-06-30 21:05:13.895 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:05:13.895 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:05:15.954 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f````&language=es-ES
+2023-06-30 21:05:16.140 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:05:59.991 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 21:05:59.997 +02:00 [INF] Hosting environment: Development
+2023-06-30 21:05:59.998 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-30 21:06:00.003 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 21:06:00.307 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 307.2871ms
+2023-06-30 21:06:00.366 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 21:06:00.366 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 21:06:00.374 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 6.1611ms
+2023-06-30 21:06:00.395 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.4667ms
+2023-06-30 21:06:00.451 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 21:06:00.525 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 73.8839ms
+2023-06-30 21:06:08.121 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-06-30 21:06:08.127 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:06:08.146 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:06:10.012 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-06-30 21:06:10.155 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:06:58.528 +02:00 [INF] ERROR -> Excepction: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Movies.Results.SearchResult.MapMovieSearch(List`1 movies, List`1 moviesSimilar) in C:\Users\Cristian\source\repos\Movies\Results\SearchResult.cs:line 60
+   at Movies.Results.SearchResult.Result(HttpResponseMessage result) in C:\Users\Cristian\source\repos\Movies\Results\SearchResult.cs:line 36
+2023-06-30 21:07:03.344 +02:00 [INF] MovieModel: null
+2023-06-30 21:07:03.350 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-06-30 21:07:03.354 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 55204.5058ms
+2023-06-30 21:07:03.355 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:07:03.356 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/?''' - - - 204 0 - 55234.9171ms
+2023-06-30 21:07:06.163 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-06-30 21:07:06.163 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:07:06.163 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:07:08.840 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-06-30 21:07:08.895 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:11:46.950 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 21:11:46.957 +02:00 [INF] Hosting environment: Development
+2023-06-30 21:11:46.957 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-30 21:11:46.964 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 21:11:47.287 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 326.9435ms
+2023-06-30 21:11:47.310 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 21:11:47.311 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 21:11:47.321 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 5.6610ms
+2023-06-30 21:11:47.359 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.8195ms
+2023-06-30 21:11:47.449 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 21:11:47.532 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 82.1615ms
+2023-06-30 21:11:54.247 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-06-30 21:11:54.256 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:11:54.274 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:12:00.294 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-06-30 21:12:01.475 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:12:09.666 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-06-30 21:12:09.670 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 15392.3846ms
+2023-06-30 21:12:09.672 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:12:09.672 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/?''' - - - 204 0 - 15424.7472ms
+2023-06-30 21:23:31.452 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 21:23:31.458 +02:00 [INF] Hosting environment: Development
+2023-06-30 21:23:31.459 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-30 21:23:31.464 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 21:23:31.781 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 319.6437ms
+2023-06-30 21:23:31.797 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 21:23:31.797 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 21:23:31.809 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 10.5529ms
+2023-06-30 21:23:31.828 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.9347ms
+2023-06-30 21:23:31.900 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 21:23:31.974 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.0260ms
+2023-06-30 21:23:55.033 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-06-30 21:23:55.039 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:23:55.058 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieMessageModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:23:55.088 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-06-30 21:23:55.237 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:23:55.308 +02:00 [INF] ERROR -> Excepction: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Movies.Results.SearchResult.Result(HttpResponseMessage result) in C:\Users\Cristian\source\repos\Movies\Results\SearchResult.cs:line 28
+2023-06-30 21:23:55.309 +02:00 [INF] MovieModel: null
+2023-06-30 21:23:55.315 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-06-30 21:23:55.318 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 256.99ms
+2023-06-30 21:23:55.320 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:23:55.321 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/?''' - - - 204 0 - 288.0838ms
+2023-06-30 21:24:46.165 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-06-30 21:24:46.188 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:24:46.188 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieMessageModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:24:51.991 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-06-30 21:24:52.960 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:25:31.533 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 21:25:31.539 +02:00 [INF] Hosting environment: Development
+2023-06-30 21:25:31.540 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-30 21:25:31.546 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 21:25:31.850 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 307.3381ms
+2023-06-30 21:25:31.864 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 21:25:31.864 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 21:25:31.873 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 5.1486ms
+2023-06-30 21:25:31.896 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.3008ms
+2023-06-30 21:25:31.963 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 21:25:32.038 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.9458ms
+2023-06-30 21:25:37.651 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-06-30 21:25:37.660 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:25:37.690 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieMessageModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:25:38.978 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-06-30 21:25:39.129 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:25:39.136 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieMessageModel'.
+2023-06-30 21:25:39.153 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1459.4123ms
+2023-06-30 21:25:39.155 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:25:39.155 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/?''' - - - 200 - application/json;+charset=utf-8 1503.8886ms
+2023-06-30 21:25:58.035 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-06-30 21:25:58.035 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:25:58.035 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieMessageModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:25:58.035 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-06-30 21:25:58.108 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:25:58.108 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieMessageModel'.
+2023-06-30 21:25:58.109 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 73.6014ms
+2023-06-30 21:25:58.109 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:25:58.109 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 74.0495ms
+2023-06-30 21:25:59.463 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-06-30 21:25:59.463 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:25:59.463 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieMessageModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:25:59.463 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-06-30 21:25:59.543 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:25:59.543 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieMessageModel'.
+2023-06-30 21:25:59.544 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 80.3163ms
+2023-06-30 21:25:59.544 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:25:59.544 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 80.6567ms
+2023-06-30 21:26:06.340 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-06-30 21:26:06.340 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:26:06.340 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieMessageModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:26:11.650 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-06-30 21:26:12.313 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:26:44.925 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 21:26:44.932 +02:00 [INF] Hosting environment: Development
+2023-06-30 21:26:44.932 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-30 21:26:44.939 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 21:26:45.245 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 309.4661ms
+2023-06-30 21:26:45.268 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 21:26:45.270 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 21:26:45.278 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 4.6932ms
+2023-06-30 21:26:45.300 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.3752ms
+2023-06-30 21:26:45.376 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 21:26:45.450 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.1374ms
+2023-06-30 21:26:51.112 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-06-30 21:26:51.122 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:26:51.141 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieMessageModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:26:52.256 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-06-30 21:26:52.395 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:28:06.272 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 21:28:06.281 +02:00 [INF] Hosting environment: Development
+2023-06-30 21:28:06.282 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-30 21:28:06.288 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 21:28:06.610 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 325.8396ms
+2023-06-30 21:28:06.635 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 21:28:06.635 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 21:28:06.645 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 6.7727ms
+2023-06-30 21:28:06.665 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.5585ms
+2023-06-30 21:28:06.736 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 21:28:06.826 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 89.9715ms
+2023-06-30 21:28:12.491 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-06-30 21:28:12.500 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:28:12.521 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieMessageModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:28:16.180 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-06-30 21:28:16.321 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:31:15.801 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 21:31:15.808 +02:00 [INF] Hosting environment: Development
+2023-06-30 21:31:15.809 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-30 21:31:15.815 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 21:31:16.114 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 302.6847ms
+2023-06-30 21:31:16.135 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 21:31:16.135 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 21:31:16.145 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 5.3253ms
+2023-06-30 21:31:16.166 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.5890ms
+2023-06-30 21:31:16.228 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 21:31:16.302 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.6215ms
+2023-06-30 21:31:21.439 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-06-30 21:31:21.446 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:31:21.469 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieMessageModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:31:23.065 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-06-30 21:31:23.202 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:31:23.230 +02:00 [INF] MovieModel: {"Message":"No existen pel\u00EDculas con ese t\u00EDtulo","Titulo":null,"Titulo_original":null,"Nota_media":0,"Fecha_estreno":null,"Descripcion":null,"Peliculas_misma_tematica":null}
+2023-06-30 21:31:23.236 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieMessageModel'.
+2023-06-30 21:31:23.245 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1772.0697ms
+2023-06-30 21:31:23.247 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:31:23.247 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/?''' - - - 200 - application/json;+charset=utf-8 1807.4242ms
+2023-06-30 21:31:33.167 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-06-30 21:31:33.167 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:31:33.167 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieMessageModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:31:34.849 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-06-30 21:31:34.903 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:31:34.906 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/671/similar?language=es-ES
+2023-06-30 21:31:34.950 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:31:34.951 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Fri, 30 Jun 2023 18:01:48 GMT
+  Server: openresty
+  Cache-Control: public, max-age=22910
+  X-Memc: HIT
+  X-Memc-Key: ecb3c24aa806a6ccade488d9233d7737
+  X-Memc-Age: 9925
+  X-Memc-Expires: 12117
+  ETag: W/"1407779d583b4630049419c44926f00f"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Hit from cloudfront
+  Via: 1.1 99428b194b789dc91708a62963bf6350.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: ktyelONhu0lWo6EdxMVIhb1wsM9ejQfdEKpZq51tchvVRJ0j7VYhEw==
+  Age: 5388
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 14060
+}
+2023-06-30 21:31:34.958 +02:00 [INF] MovieModel: {"Message":null,"Titulo":"Harry Potter y la piedra filosofal","Titulo_original":"Harry Potter and the Philosopher\u0027s Stone","Nota_media":7.916,"Fecha_estreno":"16-11-2001","Descripcion":"Harry Potter es un hu\u00E9rfano que vive con sus desagradables t\u00EDos, los Dursley, y su repelente primo Dudley. Se acerca su und\u00E9cimo cumplea\u00F1os y tiene pocas esperanzas de recibir alg\u00FAn regalo, ya que nunca nadie se acuerda de \u00E9l. Sin embargo, pocos d\u00EDas antes de su cumplea\u00F1os, una serie de misteriosas cartas dirigidas a \u00E9l y escritas con una estridente tinta verde rompen la monoton\u00EDa de su vida: Harry es un mago y sus padres tambi\u00E9n lo eran.","Peliculas_misma_tematica":"Piercing (2018), Pallikkoodam (2016), The Dellville Witch (2010), Fant\u00E1stico Sr. Fox (2009), Woyzeck (1979)"}
+2023-06-30 21:31:34.958 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieMessageModel'.
+2023-06-30 21:31:34.958 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1791.37ms
+2023-06-30 21:31:34.958 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:31:34.958 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 1791.8212ms
+2023-06-30 21:34:45.526 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 21:34:45.532 +02:00 [INF] Hosting environment: Development
+2023-06-30 21:34:45.533 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-06-30 21:34:45.543 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-06-30 21:34:45.856 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 315.8898ms
+2023-06-30 21:34:45.885 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-06-30 21:34:45.890 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-06-30 21:34:45.891 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 4.1486ms
+2023-06-30 21:34:45.918 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.6384ms
+2023-06-30 21:34:45.982 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-06-30 21:34:46.058 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 75.7091ms
+2023-06-30 21:34:51.686 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-06-30 21:34:51.695 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:34:51.724 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:34:53.431 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-06-30 21:34:53.569 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:34:53.639 +02:00 [INF] ERROR -> Excepction: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Movies.Results.SearchResult.Result(HttpResponseMessage result) in C:\Users\Cristian\source\repos\Movies\Results\SearchResult.cs:line 28
+2023-06-30 21:34:53.641 +02:00 [INF] MovieModel: null
+2023-06-30 21:34:53.650 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-06-30 21:34:53.653 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1925.5123ms
+2023-06-30 21:34:53.655 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:34:53.656 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/?''' - - - 204 0 - 1969.3724ms
+2023-06-30 21:35:20.844 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-06-30 21:35:20.844 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:35:20.844 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-06-30 21:35:22.624 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-06-30 21:35:22.679 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:35:22.682 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/671/similar?language=es-ES
+2023-06-30 21:35:22.724 +02:00 [INF] END Request -> StatusCode: OK
+2023-06-30 21:35:22.725 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Fri, 30 Jun 2023 18:01:48 GMT
+  Server: openresty
+  Cache-Control: public, max-age=22910
+  X-Memc: HIT
+  X-Memc-Key: ecb3c24aa806a6ccade488d9233d7737
+  X-Memc-Age: 9925
+  X-Memc-Expires: 12117
+  ETag: W/"1407779d583b4630049419c44926f00f"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Hit from cloudfront
+  Via: 1.1 a43329060eb599a869106ad9bb3b16b0.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: x1MiKvTALeaN8IUVJ8wrDJaQ_vMTI1Gwj4jYoLiP6G4SbO3DJz0z1w==
+  Age: 5616
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 14060
+}
+2023-06-30 21:35:22.734 +02:00 [INF] MovieModel: {"Titulo":"Harry Potter y la piedra filosofal","Titulo_original":"Harry Potter and the Philosopher\u0027s Stone","Nota_media":7.916,"Fecha_estreno":"16-11-2001","Descripcion":"Harry Potter es un hu\u00E9rfano que vive con sus desagradables t\u00EDos, los Dursley, y su repelente primo Dudley. Se acerca su und\u00E9cimo cumplea\u00F1os y tiene pocas esperanzas de recibir alg\u00FAn regalo, ya que nunca nadie se acuerda de \u00E9l. Sin embargo, pocos d\u00EDas antes de su cumplea\u00F1os, una serie de misteriosas cartas dirigidas a \u00E9l y escritas con una estridente tinta verde rompen la monoton\u00EDa de su vida: Harry es un mago y sus padres tambi\u00E9n lo eran.","Peliculas_misma_tematica":"Piercing (2018), Pallikkoodam (2016), The Dellville Witch (2010), Fant\u00E1stico Sr. Fox (2009), Woyzeck (1979)"}
+2023-06-30 21:35:22.734 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-06-30 21:35:22.740 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1895.3254ms
+2023-06-30 21:35:22.740 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-06-30 21:35:22.740 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 1895.9570ms
