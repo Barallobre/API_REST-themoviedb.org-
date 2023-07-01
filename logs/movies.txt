@@ -2632,3 +2632,317 @@
 2023-06-30 21:35:22.740 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1895.3254ms
 2023-06-30 21:35:22.740 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
 2023-06-30 21:35:22.740 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 1895.9570ms
+2023-07-01 10:08:02.145 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-01 10:08:02.151 +02:00 [INF] Hosting environment: Development
+2023-07-01 10:08:02.152 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-07-01 10:08:02.158 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-07-01 10:08:02.588 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 433.2587ms
+2023-07-01 10:08:02.597 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-07-01 10:08:02.598 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-07-01 10:08:02.607 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 3.9681ms
+2023-07-01 10:08:02.648 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.8086ms
+2023-07-01 10:08:02.648 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/favicon-16x16.png - -
+2023-07-01 10:08:02.660 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2023-07-01 10:08:02.660 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/favicon-16x16.png - - - 0 665 image/png 11.8447ms
+2023-07-01 10:08:02.696 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-07-01 10:08:02.765 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.2911ms
+2023-07-01 10:08:10.352 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-07-01 10:08:10.359 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:08:10.381 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:08:12.288 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-07-01 10:08:12.549 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:09:14.819 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-01 10:09:14.825 +02:00 [INF] Hosting environment: Development
+2023-07-01 10:09:14.826 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-07-01 10:09:14.832 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-07-01 10:09:15.132 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 303.9457ms
+2023-07-01 10:09:15.150 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-07-01 10:09:15.150 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-07-01 10:09:15.160 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 8.2709ms
+2023-07-01 10:09:15.177 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.5072ms
+2023-07-01 10:09:15.246 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-07-01 10:09:15.322 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 75.5382ms
+2023-07-01 10:09:21.548 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-07-01 10:09:21.554 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:09:21.573 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:09:21.578 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1.693ms
+2023-07-01 10:09:21.591 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:09:21.594 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Movies.Interfaces.ISearchResult' while attempting to activate 'Movies.Controllers.MoviesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-01 10:09:21.630 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 500 - text/plain;+charset=utf-8 81.9845ms
+2023-07-01 10:09:53.774 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-07-01 10:09:53.774 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:09:53.776 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:09:53.778 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1.3025ms
+2023-07-01 10:09:53.778 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:09:53.779 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Movies.Interfaces.ISearchResult' while attempting to activate 'Movies.Controllers.MoviesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-01 10:09:53.780 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 500 - text/plain;+charset=utf-8 5.7375ms
+2023-07-01 10:09:55.222 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-07-01 10:09:55.222 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:09:55.222 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:09:55.223 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 0.6599ms
+2023-07-01 10:09:55.223 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:09:55.223 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Movies.Interfaces.ISearchResult' while attempting to activate 'Movies.Controllers.MoviesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-01 10:09:55.224 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 500 - text/plain;+charset=utf-8 2.2495ms
+2023-07-01 10:10:58.124 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-01 10:10:58.131 +02:00 [INF] Hosting environment: Development
+2023-07-01 10:10:58.132 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-07-01 10:10:58.137 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-07-01 10:10:58.441 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 307.1085ms
+2023-07-01 10:10:58.462 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-07-01 10:10:58.462 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-07-01 10:10:58.483 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 11.4358ms
+2023-07-01 10:10:58.506 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.6550ms
+2023-07-01 10:10:58.571 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-07-01 10:10:58.646 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.8893ms
+2023-07-01 10:11:04.740 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-07-01 10:11:04.749 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:11:04.768 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:11:04.773 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1.7392ms
+2023-07-01 10:11:04.775 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:11:04.778 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Movies.Results.SearchResult' while attempting to activate 'Movies.Controllers.MoviesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-01 10:11:04.800 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 500 - text/plain;+charset=utf-8 59.2885ms
+2023-07-01 10:16:41.365 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-01 10:16:41.371 +02:00 [INF] Hosting environment: Development
+2023-07-01 10:16:41.372 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-07-01 10:16:41.378 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-07-01 10:16:41.676 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 301.2538ms
+2023-07-01 10:16:41.691 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-07-01 10:16:41.691 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-07-01 10:16:41.701 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 8.6685ms
+2023-07-01 10:16:41.722 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.1233ms
+2023-07-01 10:16:41.788 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-07-01 10:16:41.868 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 80.3925ms
+2023-07-01 10:16:48.239 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-07-01 10:16:48.245 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:16:48.264 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:16:52.380 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-07-01 10:16:52.516 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:16:53.249 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/671/similar?language=es-ES
+2023-07-01 10:16:53.406 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:16:53.407 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Sat, 01 Jul 2023 08:16:53 GMT
+  Server: openresty
+  Cache-Control: public, max-age=24061
+  X-Memc: HIT
+  X-Memc-Key: ecb3c24aa806a6ccade488d9233d7737
+  X-Memc-Age: 12455
+  X-Memc-Expires: 15195
+  ETag: W/"31b6639b683ad86a564c012dffae65d5"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Miss from cloudfront
+  Via: 1.1 57afd7c325699412aa6569e0643f5f88.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: j_6pPq9dH6QGcxPGKVUptwI3qFIqnPNoplg2AUaRgkrfs13lh73Ing==
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 13325
+}
+2023-07-01 10:16:53.420 +02:00 [INF] MovieModel: {"Titulo":"Harry Potter y la piedra filosofal","Titulo_original":"Harry Potter and the Philosopher\u0027s Stone","Nota_media":7.916,"Fecha_estreno":"16-11-2001","Descripcion":"Harry Potter es un hu\u00E9rfano que vive con sus desagradables t\u00EDos, los Dursley, y su repelente primo Dudley. Se acerca su und\u00E9cimo cumplea\u00F1os y tiene pocas esperanzas de recibir alg\u00FAn regalo, ya que nunca nadie se acuerda de \u00E9l. Sin embargo, pocos d\u00EDas antes de su cumplea\u00F1os, una serie de misteriosas cartas dirigidas a \u00E9l y escritas con una estridente tinta verde rompen la monoton\u00EDa de su vida: Harry es un mago y sus padres tambi\u00E9n lo eran.","Peliculas_misma_tematica":"Sebuah Seni untuk Memahami Kekasih (), Joe Pera Helps You Find the Perfect Christmas Tree (2016), A Balloon for Ben (2016), A Special Sesame Street Christmas (1978), Jingle Bells: RFK - 1964 (1977)"}
+2023-07-01 10:16:53.426 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-07-01 10:16:53.435 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 5167.7742ms
+2023-07-01 10:16:53.437 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:16:53.437 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 5198.0809ms
+2023-07-01 10:25:13.824 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-01 10:25:13.830 +02:00 [INF] Hosting environment: Development
+2023-07-01 10:25:13.831 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-07-01 10:25:13.837 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-07-01 10:25:14.141 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 307.1046ms
+2023-07-01 10:25:14.154 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-07-01 10:25:14.155 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-07-01 10:25:14.155 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger-ui.css - -
+2023-07-01 10:25:14.167 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 9.7513ms
+2023-07-01 10:25:14.174 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-07-01 10:25:14.175 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger-ui.css - - - 0 144929 text/css 19.6802ms
+2023-07-01 10:25:14.188 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.9115ms
+2023-07-01 10:25:14.207 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/favicon-16x16.png - -
+2023-07-01 10:25:14.208 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2023-07-01 10:25:14.208 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/favicon-16x16.png - - - 0 665 image/png 1.0308ms
+2023-07-01 10:25:14.264 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-07-01 10:25:14.337 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.8460ms
+2023-07-01 10:25:20.278 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-07-01 10:25:20.286 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:25:20.304 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:25:22.910 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-07-01 10:25:23.080 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:25:23.745 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/671/similar?language=es-ES
+2023-07-01 10:25:23.830 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:25:23.831 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Sat, 01 Jul 2023 08:16:53 GMT
+  Server: openresty
+  Cache-Control: public, max-age=24061
+  X-Memc: HIT
+  X-Memc-Key: ecb3c24aa806a6ccade488d9233d7737
+  X-Memc-Age: 12455
+  X-Memc-Expires: 15195
+  ETag: W/"31b6639b683ad86a564c012dffae65d5"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Hit from cloudfront
+  Via: 1.1 b426927ea90bee6f5804d316b855b47c.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: 0sdn0e_Kq0wk_XbFyAD8J7tcf1Z4HfajyjRJCCrIdMoP1GzTClqi_g==
+  Age: 510
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 13325
+}
+2023-07-01 10:25:23.840 +02:00 [INF] MovieModel: {"Titulo":"Harry Potter y la piedra filosofal","Titulo_original":"Harry Potter and the Philosopher\u0027s Stone","Nota_media":7.916,"Fecha_estreno":"16-11-2001","Descripcion":"Harry Potter es un hu\u00E9rfano que vive con sus desagradables t\u00EDos, los Dursley, y su repelente primo Dudley. Se acerca su und\u00E9cimo cumplea\u00F1os y tiene pocas esperanzas de recibir alg\u00FAn regalo, ya que nunca nadie se acuerda de \u00E9l. Sin embargo, pocos d\u00EDas antes de su cumplea\u00F1os, una serie de misteriosas cartas dirigidas a \u00E9l y escritas con una estridente tinta verde rompen la monoton\u00EDa de su vida: Harry es un mago y sus padres tambi\u00E9n lo eran.","Peliculas_misma_tematica":"Sebuah Seni untuk Memahami Kekasih (), Joe Pera Helps You Find the Perfect Christmas Tree (2016), A Balloon for Ben (2016), A Special Sesame Street Christmas (1978), Jingle Bells: RFK - 1964 (1977)"}
+2023-07-01 10:25:23.842 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-07-01 10:25:23.851 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 3542.9813ms
+2023-07-01 10:25:23.853 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:25:23.853 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 3574.6471ms
+2023-07-01 10:25:31.584 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/Gladiator - -
+2023-07-01 10:25:31.584 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:25:31.584 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:25:34.412 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=Gladiator&language=es-ES
+2023-07-01 10:25:34.670 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:25:35.270 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/98/similar?language=es-ES
+2023-07-01 10:25:35.432 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:25:35.433 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Sat, 01 Jul 2023 08:25:35 GMT
+  Server: openresty
+  Cache-Control: public, max-age=25358
+  X-Memc: HIT
+  X-Memc-Key: 84dc20aa36f76a182d35cb932f64c08b
+  X-Memc-Age: 16038
+  X-Memc-Expires: 11850
+  ETag: W/"e222c34a329baae3dd3340285321d66e"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Miss from cloudfront
+  Via: 1.1 65efe8ee2d33c55cbd211682cb533286.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: TgaoObxcSxpOYjgaGGkuMsaCswJ3HCguldir6rjfmpL_XMxJiJ7clA==
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 14050
+}
+2023-07-01 10:25:35.434 +02:00 [INF] MovieModel: {"Titulo":"Gladiator","Titulo_original":"Gladiator","Nota_media":8.205,"Fecha_estreno":"04-05-2000","Descripcion":"En el a\u00F1o 180, el Imperio Romano domina todo el mundo conocido. Tras una gran victoria sobre los b\u00E1rbaros del norte, el anciano emperador Marco Aurelio decide transferir el poder a M\u00E1ximo, bravo general de sus ej\u00E9rcitos y hombre de inquebrantable lealtad al imperio. Pero su hijo C\u00F3modo, que aspiraba al trono, no lo acepta y trata de asesinar a M\u00E1ximo.","Peliculas_misma_tematica":"Plan de escape 2: Hades (2018), Dual Mania (2021), Mommy (2014), Relatos salvajes (2014), El pa\u00EDs de las maravillas (2014)"}
+2023-07-01 10:25:35.434 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-07-01 10:25:35.435 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 3850.8895ms
+2023-07-01 10:25:35.435 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:25:35.435 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/Gladiator - - - 200 - application/json;+charset=utf-8 3851.4473ms
+2023-07-01 10:26:15.010 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-01 10:26:15.016 +02:00 [INF] Hosting environment: Development
+2023-07-01 10:26:15.017 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-07-01 10:26:15.023 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-07-01 10:26:15.322 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 302.4231ms
+2023-07-01 10:26:15.348 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-07-01 10:26:15.348 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-07-01 10:26:15.359 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 7.2325ms
+2023-07-01 10:26:15.378 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.0111ms
+2023-07-01 10:26:15.440 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-07-01 10:26:15.512 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.8989ms
+2023-07-01 10:26:22.467 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-07-01 10:26:22.473 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:26:22.494 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:26:24.917 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-07-01 10:26:25.209 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:26:25.821 +02:00 [INF] ERROR -> Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Movies.Services.SearchMovieService.Result(HttpResponseMessage result) in C:\Users\Cristian\source\repos\Movies\Services\SearchMovieService.cs:line 28
+2023-07-01 10:26:25.822 +02:00 [INF] MovieModel: null
+2023-07-01 10:26:25.828 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-07-01 10:26:25.831 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 3333.3426ms
+2023-07-01 10:26:25.833 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:26:25.834 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/?''' - - - 204 0 - 3366.1471ms
+2023-07-01 10:26:37.086 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/heidi - -
+2023-07-01 10:26:37.086 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:26:37.086 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:26:38.910 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=heidi&language=es-ES
+2023-07-01 10:26:39.100 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:26:39.669 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/365045/similar?language=es-ES
+2023-07-01 10:26:39.834 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:26:39.837 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Sat, 01 Jul 2023 08:26:39 GMT
+  Server: openresty
+  Cache-Control: public, max-age=22366
+  X-Memc: HIT
+  X-Memc-Key: 2adf9993f01b2873a5c76d17becccd67
+  X-Memc-Age: 3500
+  X-Memc-Expires: 19871
+  ETag: W/"52916e1b15c812f7b40c149909e8c27e"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Miss from cloudfront
+  Via: 1.1 ce94d6e65a03f67ef06d53000e8a30b6.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: S2ZtbcvSpN6hPR4KDCP2U-tZ2CyGFlLKNbhylHEJlp77c6SHV11-Fw==
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 15560
+}
+2023-07-01 10:26:39.845 +02:00 [INF] MovieModel: {"Titulo":"Heidi","Titulo_original":"Heidi","Nota_media":7.1,"Fecha_estreno":"10-12-2015","Descripcion":"Heidi es una hu\u00E9rfana de ocho a\u00F1os, criada por su abuelo en las monta\u00F1as suizas. Junto a su amigo, Pedro el cabrero, cuida de las cabras del abuelo y disfruta de la libertad en la monta\u00F1a. Pero un d\u00EDa su t\u00EDa Dete decide llev\u00E1rsela a la ciudad de Frankfurt para ser educada en una familia adinerada. All\u00ED har\u00E1 amistad con la hija inv\u00E1lida de la familia, Klara.","Peliculas_misma_tematica":"Remember Me? (1997), Bye Bye Barcelona (2014), La mitad oscura (1993), Fievel va al Oeste (1991), Esposa por sorpresa (1992)"}
+2023-07-01 10:26:39.845 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-07-01 10:26:39.851 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 2764.7439ms
+2023-07-01 10:26:39.851 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:26:39.851 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/heidi - - - 200 - application/json;+charset=utf-8 2765.5221ms

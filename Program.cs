@@ -1,3 +1,5 @@
+using Movies.Interfaces;
+using Movies.Services;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +10,8 @@ builder.Host.UseSerilog((ctx, lc) => lc
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-// Add services to the container.
+builder.Services.AddScoped<ISearchMovieService, SearchMovieService>();
+builder.Services.AddScoped<ISearchSimilarMoviesService, SearchSimilarMoviesService>();
 
 var configuration = builder.Configuration;
 var app = builder.Build();

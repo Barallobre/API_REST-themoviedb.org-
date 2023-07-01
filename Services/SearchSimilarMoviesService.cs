@@ -1,14 +1,15 @@
-﻿using Serilog;
+﻿using Movies.Interfaces;
+using Serilog;
 using System.Net.Http.Headers;
 using System.Web;
 
 namespace Movies.Services
 {
-    public class SimilarMoviesService
+    public class SearchSimilarMoviesService : ISearchSimilarMoviesService
     {
         private readonly IConfiguration _configuration;
 
-        public SimilarMoviesService(IConfiguration configuration)
+        public SearchSimilarMoviesService(IConfiguration configuration)
         {
             _configuration = configuration;
         }

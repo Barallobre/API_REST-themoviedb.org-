@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Movies.Interfaces;
 using Movies.Models;
-using Movies.Results;
 using Serilog;
 using System.Net.Http.Headers;
 using System.Text.Json;
@@ -14,10 +14,12 @@ namespace Movies.Controllers
     {
 
         private readonly IConfiguration _configuration;
+        private readonly ISearchMovieService _searchResult;
 
-        public MoviesController(IConfiguration configuration)
+        public MoviesController(IConfiguration configuration, ISearchMovieService searchResult)
         {
             _configuration = configuration;
+            _searchResult = searchResult;
         }
 
         [HttpGet("{name}")]
@@ -47,11 +49,9 @@ namespace Movies.Controllers
                 {
                     Log.Information($"ERROR -> Excepction: {ex}");
                 }
-                
             }
-            SearchResult searchResult = new SearchResult(_configuration);
             
-            var content = searchResult.Result(result);
+            var content = _searchResult.Result(result);
             string jsonString = JsonSerializer.Serialize(content);
             Log.Information($"MovieModel: {jsonString}");
             

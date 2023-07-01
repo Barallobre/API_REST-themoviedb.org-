@@ -1,7 +1,4 @@
 ﻿
-using Newtonsoft.Json;
-using System.Globalization;
-
 namespace Movies.Entities
 {
     public class Movie
