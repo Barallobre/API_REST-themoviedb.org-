@@ -24,19 +24,26 @@ namespace Movies.Services
         {
             var token = _configuration.GetSection("Settings")["token"];
             HttpResponseMessage result = null;
-            using (var client = new HttpClient())
+            try
             {
-                var uriBuilder = new UriBuilder("https://api.themoviedb.org/3/search/movie");
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                var parameters = HttpUtility.ParseQueryString(string.Empty);
-                parameters["query"] = name;
-                parameters["language"] = "es-ES";
-                uriBuilder.Query = parameters.ToString();
-                Uri finalUrl = uriBuilder.Uri;
-                Log.Information($"START Request -> URL: {finalUrl}");
-                result = client.GetAsync(finalUrl).Result;
-                Log.Information($"END Request -> StatusCode: {result.StatusCode}");
+                using (var client = new HttpClient())
+                {
+                    var uriBuilder = new UriBuilder("https://api.themoviedb.org/3/search/movie");
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                    var parameters = HttpUtility.ParseQueryString(string.Empty);
+                    parameters["query"] = name;
+                    parameters["language"] = "es-ES";
+                    uriBuilder.Query = parameters.ToString();
+                    Uri finalUrl = uriBuilder.Uri;
+                    Log.Information($"START Request -> URL: {finalUrl}");
+                    result = client.GetAsync(finalUrl).Result;
+                    Log.Information($"END Request -> StatusCode: {result.StatusCode}");
+                }
+            }
+            catch (Exception ex) 
+            {
+                Log.Information($"ERROR -> Excepction: {ex}");
             }
             return result;
         }

@@ -3124,3 +3124,48 @@ System.InvalidOperationException: Unable to resolve service for type 'Movies.Res
 2023-07-01 10:54:39.544 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 3165.8378ms
 2023-07-01 10:54:39.544 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
 2023-07-01 10:54:39.544 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/  - - - 400 - application/json;+charset=utf-8 3166.1969ms
+2023-07-01 11:08:00.009 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-01 11:08:00.018 +02:00 [INF] Hosting environment: Development
+2023-07-01 11:08:00.019 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-07-01 11:08:00.029 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-07-01 11:08:00.346 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 320.9050ms
+2023-07-01 11:08:00.360 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-07-01 11:08:00.360 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-07-01 11:08:00.371 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 6.7248ms
+2023-07-01 11:08:00.393 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.9277ms
+2023-07-01 11:08:00.457 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-07-01 11:08:00.526 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.2462ms
+2023-07-01 11:08:07.912 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-07-01 11:08:07.919 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 11:08:07.942 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 11:08:14.718 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-07-01 11:08:14.856 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 11:08:14.882 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/671/similar?language=es-ES
+2023-07-01 11:08:14.932 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 11:08:14.933 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Sat, 01 Jul 2023 08:16:53 GMT
+  Server: openresty
+  Cache-Control: public, max-age=24061
+  X-Memc: HIT
+  X-Memc-Key: ecb3c24aa806a6ccade488d9233d7737
+  X-Memc-Age: 12455
+  X-Memc-Expires: 15195
+  ETag: W/"31b6639b683ad86a564c012dffae65d5"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Hit from cloudfront
+  Via: 1.1 ed801d50b0a23f17d14fe9a36280ac36.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: zQSUSrB2psfR6DEE7WaRCbSkQEhiH0-xi6AXyVvHPu1CBPToQyQOOA==
+  Age: 3082
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 13325
+}
+2023-07-01 11:08:14.945 +02:00 [INF] MovieModel: {"Titulo":"Harry Potter y la piedra filosofal","Titulo_original":"Harry Potter and the Philosopher\u0027s Stone","Nota_media":7.916,"Fecha_estreno":"16-11-2001","Descripcion":"Harry Potter es un hu\u00E9rfano que vive con sus desagradables t\u00EDos, los Dursley, y su repelente primo Dudley. Se acerca su und\u00E9cimo cumplea\u00F1os y tiene pocas esperanzas de recibir alg\u00FAn regalo, ya que nunca nadie se acuerda de \u00E9l. Sin embargo, pocos d\u00EDas antes de su cumplea\u00F1os, una serie de misteriosas cartas dirigidas a \u00E9l y escritas con una estridente tinta verde rompen la monoton\u00EDa de su vida: Harry es un mago y sus padres tambi\u00E9n lo eran.","Peliculas_misma_tematica":"Sebuah Seni untuk Memahami Kekasih (), Joe Pera Helps You Find the Perfect Christmas Tree (2016), A Balloon for Ben (2016), A Special Sesame Street Christmas (1978), Jingle Bells: RFK - 1964 (1977)"}
+2023-07-01 11:08:14.952 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-07-01 11:08:14.963 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 7015.873ms
+2023-07-01 11:08:14.965 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 11:08:14.965 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 7053.0373ms
