@@ -2946,3 +2946,181 @@ System.InvalidOperationException: Unable to resolve service for type 'Movies.Res
 2023-07-01 10:26:39.851 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 2764.7439ms
 2023-07-01 10:26:39.851 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
 2023-07-01 10:26:39.851 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/heidi - - - 200 - application/json;+charset=utf-8 2765.5221ms
+2023-07-01 10:34:21.386 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-01 10:34:21.393 +02:00 [INF] Hosting environment: Development
+2023-07-01 10:34:21.394 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-07-01 10:34:21.400 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-07-01 10:34:21.705 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 308.2100ms
+2023-07-01 10:34:21.726 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-07-01 10:34:21.726 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-07-01 10:34:21.738 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 7.1817ms
+2023-07-01 10:34:21.761 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.7132ms
+2023-07-01 10:34:21.821 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-07-01 10:34:21.893 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.0563ms
+2023-07-01 10:34:29.959 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-07-01 10:34:29.968 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:34:29.995 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:34:32.118 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-07-01 10:34:32.294 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:34:32.906 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/671/similar?language=es-ES
+2023-07-01 10:34:32.983 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:34:32.984 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Sat, 01 Jul 2023 08:16:53 GMT
+  Server: openresty
+  Cache-Control: public, max-age=24061
+  X-Memc: HIT
+  X-Memc-Key: ecb3c24aa806a6ccade488d9233d7737
+  X-Memc-Age: 12455
+  X-Memc-Expires: 15195
+  ETag: W/"31b6639b683ad86a564c012dffae65d5"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Hit from cloudfront
+  Via: 1.1 2ed4d51c4c82439d51aa53380c830d68.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: zeYMfcBi-vmKTDBslfoju_qzO6ilVt8ADJhey-keWv3vuyB0j_6AaQ==
+  Age: 1060
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 13325
+}
+2023-07-01 10:34:32.993 +02:00 [INF] MovieModel: {"Titulo":"Harry Potter y la piedra filosofal","Titulo_original":"Harry Potter and the Philosopher\u0027s Stone","Nota_media":7.916,"Fecha_estreno":"16-11-2001","Descripcion":"Harry Potter es un hu\u00E9rfano que vive con sus desagradables t\u00EDos, los Dursley, y su repelente primo Dudley. Se acerca su und\u00E9cimo cumplea\u00F1os y tiene pocas esperanzas de recibir alg\u00FAn regalo, ya que nunca nadie se acuerda de \u00E9l. Sin embargo, pocos d\u00EDas antes de su cumplea\u00F1os, una serie de misteriosas cartas dirigidas a \u00E9l y escritas con una estridente tinta verde rompen la monoton\u00EDa de su vida: Harry es un mago y sus padres tambi\u00E9n lo eran.","Peliculas_misma_tematica":"Sebuah Seni untuk Memahami Kekasih (), Joe Pera Helps You Find the Perfect Christmas Tree (2016), A Balloon for Ben (2016), A Special Sesame Street Christmas (1978), Jingle Bells: RFK - 1964 (1977)"}
+2023-07-01 10:34:32.999 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-07-01 10:34:33.007 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 3008.655ms
+2023-07-01 10:34:33.009 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:34:33.009 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 3049.7325ms
+2023-07-01 10:34:39.632 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/?''' - -
+2023-07-01 10:34:39.632 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:34:39.632 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:34:41.098 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=%3f%27%27%27&language=es-ES
+2023-07-01 10:34:41.150 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:34:41.493 +02:00 [INF] ERROR -> Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Movies.Services.SearchMovieService.Result(HttpResponseMessage result) in C:\Users\Cristian\source\repos\Movies\Services\SearchMovieService.cs:line 26
+2023-07-01 10:34:41.494 +02:00 [INF] MovieModel: null
+2023-07-01 10:34:41.494 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-07-01 10:34:41.494 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1862.0181ms
+2023-07-01 10:34:41.494 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:34:41.494 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/?''' - - - 204 0 - 1862.8669ms
+2023-07-01 10:34:47.131 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/heidi - -
+2023-07-01 10:34:47.131 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:34:47.131 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:34:49.752 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=heidi&language=es-ES
+2023-07-01 10:34:49.827 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:34:50.552 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/365045/similar?language=es-ES
+2023-07-01 10:34:50.643 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:34:50.643 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Sat, 01 Jul 2023 08:26:39 GMT
+  Server: openresty
+  Cache-Control: public, max-age=22366
+  X-Memc: HIT
+  X-Memc-Key: 2adf9993f01b2873a5c76d17becccd67
+  X-Memc-Age: 3500
+  X-Memc-Expires: 19871
+  ETag: W/"52916e1b15c812f7b40c149909e8c27e"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Hit from cloudfront
+  Via: 1.1 2ed4d51c4c82439d51aa53380c830d68.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: TWhKgltQIUoOgfSh7X1vnKREl4IDoTiB0ATqdFbw8VGiEXs_2eesJg==
+  Age: 491
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 15560
+}
+2023-07-01 10:34:50.643 +02:00 [INF] MovieModel: {"Titulo":"Heidi","Titulo_original":"Heidi","Nota_media":7.1,"Fecha_estreno":"10-12-2015","Descripcion":"Heidi es una hu\u00E9rfana de ocho a\u00F1os, criada por su abuelo en las monta\u00F1as suizas. Junto a su amigo, Pedro el cabrero, cuida de las cabras del abuelo y disfruta de la libertad en la monta\u00F1a. Pero un d\u00EDa su t\u00EDa Dete decide llev\u00E1rsela a la ciudad de Frankfurt para ser educada en una familia adinerada. All\u00ED har\u00E1 amistad con la hija inv\u00E1lida de la familia, Klara.","Peliculas_misma_tematica":"Remember Me? (1997), Bye Bye Barcelona (2014), La mitad oscura (1993), Fievel va al Oeste (1991), Esposa por sorpresa (1992)"}
+2023-07-01 10:34:50.643 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-07-01 10:34:50.644 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 3512.3513ms
+2023-07-01 10:34:50.644 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:34:50.644 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/heidi - - - 200 - application/json;+charset=utf-8 3512.6888ms
+2023-07-01 10:54:11.655 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-01 10:54:11.661 +02:00 [INF] Hosting environment: Development
+2023-07-01 10:54:11.662 +02:00 [INF] Content root path: C:\Users\Cristian\source\repos\Movies\
+2023-07-01 10:54:11.668 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/index.html - -
+2023-07-01 10:54:11.967 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/index.html - - - 200 - text/html;charset=utf-8 302.4056ms
+2023-07-01 10:54:11.988 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-07-01 10:54:11.991 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-07-01 10:54:11.993 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 4.5869ms
+2023-07-01 10:54:12.020 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.0441ms
+2023-07-01 10:54:12.088 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-07-01 10:54:12.168 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.6949ms
+2023-07-01 10:54:20.056 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/harry potter - -
+2023-07-01 10:54:20.061 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:54:20.080 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:54:22.540 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=harry+potter&language=es-ES
+2023-07-01 10:54:22.673 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:54:22.698 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/671/similar?language=es-ES
+2023-07-01 10:54:22.740 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:54:22.741 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Sat, 01 Jul 2023 08:16:53 GMT
+  Server: openresty
+  Cache-Control: public, max-age=24061
+  X-Memc: HIT
+  X-Memc-Key: ecb3c24aa806a6ccade488d9233d7737
+  X-Memc-Age: 12455
+  X-Memc-Expires: 15195
+  ETag: W/"31b6639b683ad86a564c012dffae65d5"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Hit from cloudfront
+  Via: 1.1 2cff359ff8f96b22081454ca4ccb527e.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: NNAVVTT1bd9YJiZXUue3S_tlwXMPAPljXpaqHjmGBPV1-Gvc-yDD_w==
+  Age: 2249
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 13325
+}
+2023-07-01 10:54:22.750 +02:00 [INF] MovieModel: {"Titulo":"Harry Potter y la piedra filosofal","Titulo_original":"Harry Potter and the Philosopher\u0027s Stone","Nota_media":7.916,"Fecha_estreno":"16-11-2001","Descripcion":"Harry Potter es un hu\u00E9rfano que vive con sus desagradables t\u00EDos, los Dursley, y su repelente primo Dudley. Se acerca su und\u00E9cimo cumplea\u00F1os y tiene pocas esperanzas de recibir alg\u00FAn regalo, ya que nunca nadie se acuerda de \u00E9l. Sin embargo, pocos d\u00EDas antes de su cumplea\u00F1os, una serie de misteriosas cartas dirigidas a \u00E9l y escritas con una estridente tinta verde rompen la monoton\u00EDa de su vida: Harry es un mago y sus padres tambi\u00E9n lo eran.","Peliculas_misma_tematica":"Sebuah Seni untuk Memahami Kekasih (), Joe Pera Helps You Find the Perfect Christmas Tree (2016), A Balloon for Ben (2016), A Special Sesame Street Christmas (1978), Jingle Bells: RFK - 1964 (1977)"}
+2023-07-01 10:54:22.756 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-07-01 10:54:22.765 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 2681.5148ms
+2023-07-01 10:54:22.766 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:54:22.767 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/harry potter - - - 200 - application/json;+charset=utf-8 2711.0765ms
+2023-07-01 10:54:28.307 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/heidi - -
+2023-07-01 10:54:28.307 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:54:28.307 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:54:30.045 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/search/movie?query=heidi&language=es-ES
+2023-07-01 10:54:30.096 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:54:30.096 +02:00 [INF] START Request -> URL: https://api.themoviedb.org/3/movie/365045/similar?language=es-ES
+2023-07-01 10:54:30.142 +02:00 [INF] END Request -> StatusCode: OK
+2023-07-01 10:54:30.143 +02:00 [INF] MovieModel: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Connection: keep-alive
+  Date: Sat, 01 Jul 2023 08:26:39 GMT
+  Server: openresty
+  Cache-Control: public, max-age=22366
+  X-Memc: HIT
+  X-Memc-Key: 2adf9993f01b2873a5c76d17becccd67
+  X-Memc-Age: 3500
+  X-Memc-Expires: 19871
+  ETag: W/"52916e1b15c812f7b40c149909e8c27e"
+  Vary: Accept-Encoding
+  Vary: Origin
+  X-Cache: Hit from cloudfront
+  Via: 1.1 a21dc4de5833aaa6d917631becb22680.cloudfront.net (CloudFront)
+  X-Amz-Cf-Pop: MAD56-P2
+  Alt-Svc: h3=":443"; ma=86400
+  X-Amz-Cf-Id: b29SFi22b823Oxs4yNaY7uO_sUlP79xSYfhiqfOt6d-2x-lZkDo7GA==
+  Age: 1671
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 15560
+}
+2023-07-01 10:54:30.143 +02:00 [INF] MovieModel: {"Titulo":"Heidi","Titulo_original":"Heidi","Nota_media":7.1,"Fecha_estreno":"10-12-2015","Descripcion":"Heidi es una hu\u00E9rfana de ocho a\u00F1os, criada por su abuelo en las monta\u00F1as suizas. Junto a su amigo, Pedro el cabrero, cuida de las cabras del abuelo y disfruta de la libertad en la monta\u00F1a. Pero un d\u00EDa su t\u00EDa Dete decide llev\u00E1rsela a la ciudad de Frankfurt para ser educada en una familia adinerada. All\u00ED har\u00E1 amistad con la hija inv\u00E1lida de la familia, Klara.","Peliculas_misma_tematica":"Remember Me? (1997), Bye Bye Barcelona (2014), La mitad oscura (1993), Fievel va al Oeste (1991), Esposa por sorpresa (1992)"}
+2023-07-01 10:54:30.143 +02:00 [INF] Executing ObjectResult, writing value of type 'Movies.Models.MovieModel'.
+2023-07-01 10:54:30.143 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 1836.3429ms
+2023-07-01 10:54:30.143 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:54:30.143 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/heidi - - - 200 - application/json;+charset=utf-8 1836.8101ms
+2023-07-01 10:54:36.377 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44375/api/Movies/  - -
+2023-07-01 10:54:36.378 +02:00 [INF] Executing endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:54:36.378 +02:00 [INF] Route matched with {action = "Get", controller = "Movies"}. Executing controller action with signature Movies.Models.MovieModel Get(System.String) on controller Movies.Controllers.MoviesController (Movies).
+2023-07-01 10:54:39.535 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-07-01 10:54:39.544 +02:00 [INF] Executed action Movies.Controllers.MoviesController.Get (Movies) in 3165.8378ms
+2023-07-01 10:54:39.544 +02:00 [INF] Executed endpoint 'Movies.Controllers.MoviesController.Get (Movies)'
+2023-07-01 10:54:39.544 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44375/api/Movies/  - - - 400 - application/json;+charset=utf-8 3166.1969ms

@@ -2,21 +2,47 @@
 using Movies.Interfaces;
 using Movies.Models;
 using Serilog;
+using System.Net.Http.Headers;
 using System.Text.Json;
+using System.Web;
+using System.Xml.Linq;
 
 namespace Movies.Services
 {
     public class SearchMovieService : ISearchMovieService
     {
         private readonly ISearchSimilarMoviesService _searchSimilarMoviesService;
+        private readonly IConfiguration _configuration;
 
-        public SearchMovieService(ISearchSimilarMoviesService searchSimilarMoviesService)
+        public SearchMovieService(IConfiguration configuration, ISearchSimilarMoviesService searchSimilarMoviesService)
         {
             _searchSimilarMoviesService = searchSimilarMoviesService;
+            _configuration = configuration;
         }
+
+        public HttpResponseMessage ApiCall(string name)
+        {
+            var token = _configuration.GetSection("Settings")["token"];
+            HttpResponseMessage result = null;
+            using (var client = new HttpClient())
+            {
+                var uriBuilder = new UriBuilder("https://api.themoviedb.org/3/search/movie");
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                var parameters = HttpUtility.ParseQueryString(string.Empty);
+                parameters["query"] = name;
+                parameters["language"] = "es-ES";
+                uriBuilder.Query = parameters.ToString();
+                Uri finalUrl = uriBuilder.Uri;
+                Log.Information($"START Request -> URL: {finalUrl}");
+                result = client.GetAsync(finalUrl).Result;
+                Log.Information($"END Request -> StatusCode: {result.StatusCode}");
+            }
+            return result;
+        }
+
         public MovieModel Result(HttpResponseMessage result)
         {
-
             string moviesResult = result.Content.ReadAsStringAsync().Result;
 
             try
