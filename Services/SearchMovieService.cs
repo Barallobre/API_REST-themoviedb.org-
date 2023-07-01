@@ -8,12 +8,10 @@ namespace Movies.Services
 {
     public class SearchMovieService : ISearchMovieService
     {
-        private readonly IConfiguration _configuration;
         private readonly ISearchSimilarMoviesService _searchSimilarMoviesService;
 
-        public SearchMovieService(IConfiguration configuration, ISearchSimilarMoviesService searchSimilarMoviesService)
+        public SearchMovieService(ISearchSimilarMoviesService searchSimilarMoviesService)
         {
-            _configuration = configuration;
             _searchSimilarMoviesService = searchSimilarMoviesService;
         }
         public MovieModel Result(HttpResponseMessage result)
